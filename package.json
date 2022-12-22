@@ -1,0 +1,29 @@
+{
+  "name": "chat-api-with-sockets",
+  "version": "1.0.0",
+  "description": "chat app with sockets and login auth",
+  "main": "server.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "babel src -d lib && nodemon lib/server.js",
+    "serve": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [
+    "chat-with-sockets"
+  ],
+  "author": "Melton",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.20"
+  }
+}
